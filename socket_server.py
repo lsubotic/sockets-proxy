@@ -65,7 +65,7 @@ def protocol_thread(conn, request_data):
     first_line = request_data.split(b'\n')[0]
 
     if b'CONNECT' in first_line:
-        # HTTPS
+        # HTTPS (not implemented yet)
         pass
     elif b'GET' in first_line:
         # HTTP
