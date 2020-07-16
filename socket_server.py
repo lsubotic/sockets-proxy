@@ -37,7 +37,7 @@ def server_start():
 
 def server_run():
     """
-    Receives and handles upcoming requests with threading
+    Accepts upcoming requests from the client and starts an thread for each connection
     """
     server = server_start()
     while True:
