@@ -27,8 +27,8 @@ The server will start listening for connections on port 8080 by default, to choo
 </br>
 Make sure to run the server with adminstrator privileges!<br/>
 
-To configure with Mozilla check out [https://support.mozilla.org/en-US/kb/connection-settings-firefox][this guide]<br/>
+To configure with Mozilla check out [this guide](https://support.mozilla.org/en-US/kb/connection-settings-firefox).<br/>
 For other browsers please check out their documentation.<br/>
-*Note: proxy handles only HTTP connections*<br/>
+*Note: proxy handles only HTTP connections(for now).*<br/>
 
 
