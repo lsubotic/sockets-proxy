@@ -25,8 +25,10 @@ The server will start listening for connections on port 8080 by default, to choo
 **Example:** ```$ python socket_server.py --1312``` sets the server port to **1312**<br/>
 *Ports in range **1-1023** are not recommended as they are privileged and usually reserved for well known services*.<br/>
 </br>
-Make sure to run the server with adminstrator privileges!
+Make sure to run the server with adminstrator privileges!<br/>
 
-
+To configure with Mozilla check out [https://support.mozilla.org/en-US/kb/connection-settings-firefox][this guide]<br/>
+For other browsers please check out their documentation.<br/>
+*Note: proxy handles only HTTP connections*<br/>
 
 
