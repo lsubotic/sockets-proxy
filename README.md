@@ -6,7 +6,8 @@ Python proxy server which handles HTTP requests
 * Easy to run
 * Supports IPv4/IPv6
 * Can be wrapped with SSL to handle HTTPS connections
-The script is written in Python 3.8
+
+<br/>The script is written in Python 3.8
 
 
 
