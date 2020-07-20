@@ -22,8 +22,9 @@ $ python socket_server.py
 
 The server will start listening for connections on port 8080 by default, to choose a custom port use **'--'**<br/>
 **Example:** ```$ python socket_server.py --1312``` sets the server port to **1312**<br/>
-*Ports in range **1-1023** are not recommended as they are privileged and usually reserved for well known services*.<br/><br/>
-Make sure to run the server with adminstrator privileges!<br/>
+*Ports in range **1-1023** are not recommended as they are privileged and usually reserved for well known services*.<br/>
+</br>
+Make sure to run the server with adminstrator privileges!
 
 
 
