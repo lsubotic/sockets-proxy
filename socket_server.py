@@ -5,7 +5,7 @@ import sys
 
 # Constants
 LOCALHOST = ''
-SERVER_PORT = 8080
+SERVER_PORT = 8080  # default port value
 BUFFER_SIZE = 4096
 MAX_CONNS = 100
 TIMEOUT = 10
@@ -23,6 +23,7 @@ def server_start():
         server.bind((LOCALHOST, SERVER_PORT))
         server.listen(MAX_CONNS)
         print('>> Server started successfully... [CTRL-C to exit]')
+        print('Listening for connections...')
         print(f'Port used: {SERVER_PORT}')
 
     except KeyboardInterrupt:
@@ -164,7 +165,31 @@ def connection_resolve(sock, conn, request_data):
         conn.close()
 
 
+def custom_port(command):
+    """
+    Returns the custom port if the command and port are valid
+    """
+    try:
+        if '--' in command:
+            port = int(command.replace('--', ''))
+            if port < 1 or port > 65535:
+                print('Please enter port in valid range [1 - 65535]')
+                sys.exit(0)
+
+            return port
+        else:
+            print('[!] Invalid command, please try again')
+            sys.exit(1)
+    except Exception as e:
+        print(f'[!]Invalid command, please try again {e}')
+        sys.exit(1)
+
+
 if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        cmd = sys.argv[1]
+        SERVER_PORT = custom_port(cmd)
+
     try:
         server_run()
     except KeyboardInterrupt:
@@ -172,4 +197,3 @@ if __name__ == '__main__':
         sys.exit(0)
     except Exception as e:
         print("[!] An error ocurred, server has been stopped: ", e)
-
