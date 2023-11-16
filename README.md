@@ -36,13 +36,13 @@ To configure the proxy with Mozilla check out [this guide](https://support.mozil
 For other browsers please check out their documentation.<br/>
 
 ## Example:
-- Server is waiting for the browser to connect to it
-<img src="startexample.png" alt="alttxt1" style="width:50%" />
+- Server started and is waiting for the browser to connect to it
+<img src="/images/startexample.png" alt="alttxt1" style="width:50%" />
 
 
 
 - Connection is accepted and a reququest is made to [Python docs](https://docs.python.org/3/), for example, and each further connection is handled
-<img src="connexample.png" alt="alttxt2" style="width:50%" />
+<img src="/images/connexample.png" alt="alttxt2" style="width:50%" />
 
 
 
