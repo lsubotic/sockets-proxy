@@ -7,9 +7,15 @@ Install the **sockets** module if you don't have it:
 ```bash
 $ pip install sockets
 ```
+Or via `requirements.txt`:
+```bash
+$ python3 -m venv /venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+```
 Then simply run the server:
 ```bash
-$ python socket_server.py
+$ python3 proxy_server.py
 ```
 ## Details
 Proxy server written in python, using the `[socket](https://docs.python.org/3/library/socket.html)` module, capable of handling HTTP and HTTPS. 
@@ -29,14 +35,17 @@ Proxy server written in python, using the `[socket](https://docs.python.org/3/li
 To configure the proxy with Mozilla check out [this guide](https://support.mozilla.org/en-US/kb/connection-settings-firefox).<br/>
 For other browsers please check out their documentation.<br/>
 
-## Examples:
+## Example:
 - Server is waiting for the browser to connect to it
+<img src="startexample.png" alt="alttxt1" style="width:50%" />
 
 
-- Connection is accepted
+
+- Connection is accepted and a reququest is made to [Python docs](https://docs.python.org/3/), for example, and each further connection is handled
+<img src="connexample.png" alt="alttxt2" style="width:50%" />
 
 
-- A request is made, to [Python docs](https://docs.python.org/3/), for example, and each further connection is handled
+
 
 
 
