@@ -25,6 +25,7 @@ Proxy server written in python, using the `[socket](https://docs.python.org/3/li
 - Creates a server socket that is ready to accept incoming connections from clients (ex. Mozilla)
 - Determines whether connections are HTTP or HTTPS
 - `HTTP` connections get immediately resolved, `HTTPS` connections are *persistent* and stay open until closed
+
 *NOTE for HTTPS: This is not a 'Man in the middle' proxy that enables the user to see the tunneled HTTPS data, as the data sent between the browser and the remote webserver is encrypted, a man in the middle proxy would require the proxy server to have its own certificates that would decrypt the browser data, read it, and then encrypt them again and send to the remote web server. The browser and the remote web server would also need to trust the ProxyServer's certificates. This proxy only proxies the data, it does not read it.*
 *However, for HTTP connections, as they don't have encryption, the data passing through the proxy over a HTTP connection can be easily seen* 
 
