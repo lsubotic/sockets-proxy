@@ -18,7 +18,7 @@ Then simply run the server:
 $ python3 proxy_server.py
 ```
 ## Details
-Proxy server written in python, using the `[socket](https://docs.python.org/3/library/socket.html)` module, capable of handling HTTP and HTTPS. 
+Proxy server written in python, using the [socket](https://docs.python.org/3/library/socket.html) module, capable of handling HTTP and HTTPS. 
 *Note that Ports in range **1-1023** are not recommended as they are privileged 
 
 ## How it works
