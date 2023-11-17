@@ -43,7 +43,7 @@ For other browsers please check out their documentation.<br/>
 
 
 
-- Connection is accepted and a reququest is made to [Python docs](https://docs.python.org/3/), for example, and each further connection is handled
+- Connection is accepted - here, a request is made to [Python docs](https://docs.python.org/3/), for example, and each further connection is handled
 <img src="/images/connexample.png" alt="alttxt2" style="width:50%" />
 
 
