@@ -29,10 +29,13 @@ Proxy server written in python, using the [socket](https://docs.python.org/3/lib
 *However, for HTTP connections, as they don't have encryption, the data passing through the proxy over a HTTP connection can be easily seen* 
 
 
-</br>
 
 - To configure the proxy with Mozilla check out [this guide](https://support.mozilla.org/en-US/kb/connection-settings-firefox).<br/>
 For other browsers please check out their documentation.<br/>
+
+
+### For more in depth details and the ideas behind it, check out the [Jupyter Notebook](/https_proxy.ipynb) file!
+
 
 ## Example:
 - Server started and is waiting for the browser to connect to it
